@@ -1,0 +1,22 @@
+  <!-- You can now use your library component in app.component.html -->
+  <ngx-slick-carousel class="carousel sliderSlick"
+  #slickModal="slick-carousel"
+  [config]="slideConfig"
+  (init)="slickInit($event)"
+  (breakpoint)="breakpoint($event)"
+  (afterChange)="afterChange($event)"
+  (beforeChange)="beforeChange($event)">
+<div ngxSlickItem *ngFor="let slide of customers" class="slide">
+  <blockquote class="blockquote text-center border-0 mt-0">
+    <span class="quote-icon small"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-quote" viewBox="0 0 41 35"><path d="M10.208 17.711h6.124v16.332H0V21.684C0 8.184 5.444.956 16.332 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766zm24.498 0h6.124v16.332H24.498V21.684C24.498 8.184 29.942.956 40.83 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766z" fill="#000" fill-rule="evenodd"></path></svg></span>
+    <p class="mb-0 small">{{slide.description}}</p>
+    <footer class="blockquote-footer">{{slide.clienName}}</footer>
+  </blockquote>
+</div>
+</ngx-slick-carousel>
+<div class="text-center mb-4">
+<button class="btn btn-link text-black" (click)="slickModal.slickPrev()"><i class="fal fa-arrow-left" ></i></button>
+<button class="btn btn-link text-black" (click)="slickModal.slickNext()"><i class="fal fa-arrow-right" ></i></button>
+</div>
+
+

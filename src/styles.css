@@ -11363,3 +11363,43 @@ svg {
 .navbar-light .navbar-nav .nav-link {
   color:#000;
 }
+
+
+
+.slick-dots li button:before{
+
+  font-size: 15px !important  ;
+}
+.slick-dots li.slick-active button:before{
+  color:#e20074 !important;
+}
+.slick-slider{
+  outline: none !important;
+}
+.slick-prev {
+  left: 20px !important;
+  z-index: 9999 !important;
+}
+.slick-prev:before {
+  content: "\f053" !important;
+  font-family: "Font Awesome 5 Pro" !important;
+  font-size: 50px !important;
+  color:#000 !important;
+}
+.slick-next {
+  right: 20px !important;
+  z-index: 9999 !important;
+}
+.slick-next:before {
+  content: "\f054" !important;
+  font-family: "Font Awesome 5 Pro" !important;
+  font-size: 50px !important;
+  color:#000 !important;
+}
+.slick-slide img, .slick-slide:focus  {
+  outline: none !important;
+}
+
+.sliderSlick .slick-next, .sliderSlick .slick-prev{
+  display:none !important;
+}

@@ -1,0 +1,33 @@
+.column#caption {
+  position: relative;
+}
+
+.column {
+  display: inline-block;
+  text-align: center;
+}
+.column#caption .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+/* .column img {
+  display: block;
+  width: 100%;
+  height: 300px;
+} */
+.column#caption:hover .text {
+  opacity: 1;
+  color:#fff;
+}
+
+.column#caption .text h1{
+  color:#fff;
+}
+.column#caption:hover img {
+  -webkit-filter: sepia(90%);
+}

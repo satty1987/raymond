@@ -6,12 +6,12 @@ import { GalleryComponent } from './pages/gallery/gallery.component';
 import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
-{path: 'home', component: HomeComponent},
-{path: 'about', component: AboutComponent},
-{path: 'collection', component: GalleryComponent},
-{path: 'contact', component: ContactComponent}
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'collection', component: GalleryComponent },
+  { path: 'contact', component: ContactComponent }
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

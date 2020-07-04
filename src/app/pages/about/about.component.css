@@ -1,0 +1,17 @@
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: #0f0f0f;
+}
+.hero__media-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.hero--450px {
+  height: 450px;
+}

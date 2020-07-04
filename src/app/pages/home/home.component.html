@@ -1,4 +1,5 @@
-<div class="container">
+<app-banner></app-banner>
+<div class="container-fluid">
   <div class="row">
     <div class="col-12 text-center mt-5 mb-5 pt-5 pb-5">
       <h4>Welcome to Alam Made to Measure</h4>
@@ -9,5 +10,144 @@
       </p>
     </div>
 
+
+<div id="categories" class="bg-black" *ngIf="true">
+
+  <!-- Gallery  Grid -->
+  <div class="uk-child-width-1-1@s uk-child-width-1-3@m uk-child-width-1-3@l uk-text-center uk-grid-collapse uk-grid" data-uk-grid="">
+
+
+    <!-- Category Content -->
+    <div class="images uk-first-column" data-uk-lightbox="animation: fade">
+
+      <div class="uk-inline-clip uk-transition-toggle" tabindex="0" data-caption="This is a caption.">
+
+        <!-- Image -->
+        <img src="../../../assets/images/suit1.png" alt="">
+
+        <!-- Hover -->
+        <div class="uk-position-left uk-overlay-primary-dark text-center width-100">
+
+          <!-- Hover Container -->
+          <div class="margin-left-fifteen-percent margin-right-fifteen-percent">
+
+            <!-- Top Content -->
+            <div class="uk-position-center">
+              <p class=" text-gray-light "> LIMITED TIME ONLY SALE </p>
+              <h6 class="text-weight-700 text-gray-light text-extra-large">
+                EXCLUSIVE SUITS
+              </h6>
+
+            </div>
+            <!-- End Top Content -->
+
+
+          </div>
+          <!-- End Hover Container -->
+
+        </div>
+        <!-- End Hover -->
+
+      </div>
+
+    </div>
+    <!-- End Category Content -->
+
+
+    <!-- Category Content -->
+    <div class="images" data-uk-lightbox="animation: fade">
+
+      <div class="uk-inline-clip uk-transition-toggle" tabindex="0" data-caption="This is a caption.">
+
+        <!-- Image -->
+        <img src="../../../assets/images/suit2.png" alt="">
+
+        <!-- Hover -->
+        <div class="uk-overlay-primary-dark uk-position-left text-center width-100">
+
+            <!-- Top Content -->
+            <div class="uk-position-center">
+              <p class=" text-gray-light ">  SUIT + SHIRT + TIE
+              </p>
+              <h6 class="text-weight-700 text-gray-light text-extra-large">
+                FULL SUIT PACKAGE
+              </h6>
+
+            </div>
+            <!-- End Top Content -->
+
+
+          </div>
+          <!-- End Hover Container -->
+
+        </div>
+        <!-- End Hover -->
+
+
+    </div>
+    <!-- End Category Content -->
+
+
+    <!-- Category Content -->
+    <div class="images" data-uk-lightbox="animation: fade">
+
+      <div class="uk-inline-clip uk-transition-toggle" tabindex="0" data-caption="This is a caption.">
+
+        <!-- Image -->
+        <img src="../../../assets/images/suit3.png" alt="">
+
+        <!-- Hover -->
+        <div class="uk-position-left uk-overlay-primary-dark text-center width-100">
+
+          <!-- Hover Container -->
+          <div class="margin-left-fifteen-percent margin-right-fifteen-percent">
+
+            <!-- Top Content -->
+            <div class="uk-position-center">
+              <p class=" text-gray-light ">
+                From Basics To Printed
+              </p>
+              <h6 class="text-weight-700 text-gray-light text-extra-large">
+                SPORT COATS
+              </h6>
+
+            </div>
+            <!-- End Top Content -->
+
+
+          </div>
+          <!-- End Hover Container -->
+
+        </div>
+        <!-- End Hover -->
+
+      </div>
+
+    </div>
+    <!-- End Category Content -->
+
+  </div>
+  <!-- End Gallery  Grid -->
+
+</div>
+
+
+    <div class="col-12 mt-5">
+      <h4 class="text-center">Feature Products</h4>
+      <app-slider [slides]="slides" [slidesToShow]="3"></app-slider>
+    </div>
+
+    <div class="col-12 mt-5">
+      <h4 class="text-center">Sales Item</h4>
+      <app-slider [slides]="saleItems" [slidesToShow]="4"></app-slider>
+    </div>
+
+    <div class="col-12 mt-5">
+      <h4 class="text-center">Happy Customer</h4>
+      <app-happy-customer></app-happy-customer>
+    </div>
+
+
   </div>
 </div>
+
