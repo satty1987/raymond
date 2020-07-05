@@ -3187,7 +3187,7 @@ blockquote p{
 
 .uk-overlay-primary-dark{
 
-    background: rgba(0, 0, 0, 0.70);
+    background: rgba(0, 0, 0, 0.40);
 
 }
 
@@ -11378,23 +11378,25 @@ svg {
 }
 .slick-prev {
   left: 20px !important;
-  z-index: 9999 !important;
+  z-index: 5 !important;
 }
 .slick-prev:before {
   content: "\f053" !important;
   font-family: "Font Awesome 5 Pro" !important;
   font-size: 50px !important;
   color:#000 !important;
+  font-weight: 300;
 }
 .slick-next {
   right: 20px !important;
-  z-index: 9999 !important;
+  z-index: 5 !important;
 }
 .slick-next:before {
   content: "\f054" !important;
   font-family: "Font Awesome 5 Pro" !important;
   font-size: 50px !important;
   color:#000 !important;
+  font-weight: 300;
 }
 .slick-slide img, .slick-slide:focus  {
   outline: none !important;
