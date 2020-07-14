@@ -6,47 +6,40 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lightbox.component.css']
 })
 export class LightboxComponent implements OnInit {
-  imagesBasic = [
-    { img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(117).jpg', thumb:
-    'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(117).jpg', description: 'Image 1' },
-    { img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(98).jpg', thumb:
-    'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(98).jpg', description: 'Image 2' },
-    { img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(131).jpg', thumb:
-    'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(131).jpg', description: 'Image 3' },
-    { img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(123).jpg', thumb:
-    'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(123).jpg', description: 'Image 4' },
-    { img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(118).jpg', thumb:
-    'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(118).jpg', description: 'Image 5' },
-    { img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(128).jpg', thumb:
-    'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(128).jpg', description: 'Image 6' },
-    { img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(132).jpg', thumb:
-    'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(132).jpg', description: 'Image 7' },
-    { img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(115).jpg', thumb:
-    'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(115).jpg', description: 'Image 8' },
-    { img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(133).jpg', thumb:
-    'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(133).jpg', description: 'Image 9' }
+
+  customer = [
+    'assets/raymond/raymondfinal-1.jpg',
+    'assets/raymond/raymondfinal-12.jpg',
+    'assets/raymond/raymondfinal-20.jpg',
+    'assets/raymond/raymondfinal-25.jpg',
+    'assets/raymond/raymondfinal-28.jpg',
+    'assets/raymond/raymondfinal-29.jpg',
+    'assets/raymond/raymondfinal-3.jpg',
+    'assets/raymond/raymondfinal-30.jpg',
+    'assets/raymond/raymondfinal-31.jpg',
+    'assets/raymond/raymondfinal-32.jpg',
+    'assets/raymond/raymondfinal-36.jpg',
+    'assets/raymond/raymondfinal-37.jpg',
+    'assets/raymond/raymondfinal-4.jpg',
+    'assets/raymond/raymondfinal-40.jpg',
+    'assets/raymond/raymondfinal-46.jpg',
+    'assets/raymond/raymondfinal-47.jpg',
+    'assets/raymond/raymondfinal-5.jpg',
+    'assets/raymond/raymondfinal-6.jpg',
+    'assets/raymond/raymondfinal-13.jpg',
+    'assets/raymond/raymondfinal-14.jpg',
+    'assets/raymond/raymondfinal-18.jpg',
+    'assets/raymond/raymondfinal-21.jpg',
+    'assets/raymond/raymondfinal-23.jpg',
+    'assets/raymond/raymondfinal-26.jpg',
+    'assets/raymond/raymondfinal-27.jpg',
+    'assets/raymond/raymondfinal-33.jpg',
+    'assets/raymond/raymondfinal-34.jpg',
+    'assets/raymond/raymondfinal-35.jpg',
+    'assets/raymond/raymondfinal-44.jpg',
+    'assets/raymond/raymondfinal-45.jpg',
     ];
 
-    saleItems = [
-      { img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(117).jpg', thumb:
-      'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(117).jpg', description: 'Image 1' },
-      { img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(98).jpg', thumb:
-      'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(98).jpg', description: 'Image 2' },
-      { img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(131).jpg', thumb:
-      'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(131).jpg', description: 'Image 3' },
-      { img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(123).jpg', thumb:
-      'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(123).jpg', description: 'Image 4' },
-      { img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(118).jpg', thumb:
-      'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(118).jpg', description: 'Image 5' },
-      { img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(128).jpg', thumb:
-      'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(128).jpg', description: 'Image 6' },
-      { img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(132).jpg', thumb:
-      'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(132).jpg', description: 'Image 7' },
-      { img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(115).jpg', thumb:
-      'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(115).jpg', description: 'Image 8' },
-      { img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(133).jpg', thumb:
-      'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(133).jpg', description: 'Image 9' }
-      ];
   constructor() { }
 
   ngOnInit(): void {

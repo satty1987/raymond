@@ -31,3 +31,11 @@
 .column#caption:hover img {
   -webkit-filter: sepia(90%);
 }
+
+.logo {
+
+  padding: 5px;
+  border: 1px solid #ccc;
+  /*Scale down will take the necessary specified space that is 400px x 200px without stretching the image*/
+  object-fit:scale-down;
+}

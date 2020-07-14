@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BannerComponent implements OnInit {
   slides = [
-    { img:  'https://app-dam.herokuapp.com/assets/slider-light-slide-1-1920x776.png' },
-    { img:  'https://app-dam.herokuapp.com/assets/slider-light-slide-2-1920x776.png' },
-    {img: 'https://app-dam.herokuapp.com/assets/slider-light-slide-3-1920x776.png'}
+    { img:  './assets/ban/ray1.jpg' },
+    { img:  './assets/ban/ray2.jpg' },
+    { img:  './assets/ban/ray3.jpg' },
+    { img:  './assets/ban/ray4.jpg' },
+    { img:  './assets/ban/ray5.jpg' }
   ];
   slideConfig = {  'slidesToShow ': 1,  'slidesToScroll ': 1 , autoplay: false,  infinite: false};
   constructor() { }

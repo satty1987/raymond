@@ -1,32 +1,12 @@
 <div class="container-fluid">
   <div class="row no-gutter">
     <div class="col-12 text-center mt-4 mb-4">
-<h1 class="display-3">New Arrivals</h1>
     </div>
-    <div class="col-sm-4 p-0" *ngFor="let item of imagesBasic">
-      <span class="column col-xs-6" id="caption"><span class="text">
-        <h1>Thunder</h1>
-      </span>
-      <img  src="{{item.img}}" class="img-responsive"/>
-    </span>
+    <div class="col-sm-4 mb-4" *ngFor="let item of customer">
+      <a href="./{{item}}" target="_blank">
+      <img  src="./{{item}}" class="img-responsive logo"/></a>
     </div>
 
   </div>
 </div>
 
-
-<div class="container-fluid">
-  <div class="row no-gutter">
-    <div class="col-12 text-center mt-4 mb-4">
-<h1 class="display-3">Sale Items</h1>
-    </div>
-    <div class="col-sm-4 p-0" *ngFor="let item of saleItems">
-      <span class="column col-xs-6" id="caption"><span class="text">
-        <h1>Thunder</h1>
-      </span>
-      <img  src="{{item.img}}" class="img-responsive"/>
-    </span>
-    </div>
-
-  </div>
-</div>
