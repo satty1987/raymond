@@ -8,24 +8,28 @@ import { Component, OnInit, Input } from '@angular/core';
 export class HappyCustomerComponent implements OnInit {
 
   customers = [{
-    description: `Absolutely amazing and highly recommended. They are great at paying
-  attention to detail, they are professional and treat you like family. `,
-    clienName: 'Satnam'
+    description: `A great shopping experience , never expected such a vide variety of Suits in  tri-city.`,
+    clienName: 'Bikram jit Singh'
   },
   {
-    description: `Absolutely amazing and highly recommended. They are great at paying
-  attention to detail, they are professional and treat you like family. `,
-    clienName: 'Satnam'
+    description: `My in laws  gifted me suit from here , Don’t know what to say!!!!!!!!
+    It has to be good by all means. My in laws  gifted me suit from here ,
+    Don’t know what to say!!!!!!!! It has to be good by all means. `,
+    clienName: 'Ansh'
   },
   {
-    description: `Absolutely amazing and highly recommended. They are great at paying
-  attention to detail, they are professional and treat you like family. `,
-    clienName: 'Satnam'
+    description: `Custom Raymond’s authorized tailoring is available here I recommend
+    everyone to be here and try the same Custom Raymond’s authorized
+    tailoring is available here I recommend  everyone to be here and try the same  `,
+    clienName: 'Surjit Singh'
   },
   {
-    description: `Absolutely amazing and highly recommended. They are great at paying
-  attention to detail, they are professional and treat you like family. `,
-    clienName: 'Satnam'
+    description: `One stop for Men’s shopping “though we don’t do that much “ Nice fabric available here you ll get all choices. `,
+    clienName: 'Narinder Kumar'
+  },
+  {
+    description: `Amazing services and Great Ambience, got good offers thanks`,
+    clienName: 'Ravi Kumar'
   }
   ];
 

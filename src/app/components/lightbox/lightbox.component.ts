@@ -10,7 +10,6 @@ export class LightboxComponent implements OnInit {
   customer = [
     'assets/raymond/raymondfinal-1.jpg',
     'assets/raymond/raymondfinal-12.jpg',
-    'assets/raymond/raymondfinal-20.jpg',
     'assets/raymond/raymondfinal-25.jpg',
     'assets/raymond/raymondfinal-28.jpg',
     'assets/raymond/raymondfinal-29.jpg',
@@ -22,8 +21,6 @@ export class LightboxComponent implements OnInit {
     'assets/raymond/raymondfinal-37.jpg',
     'assets/raymond/raymondfinal-4.jpg',
     'assets/raymond/raymondfinal-40.jpg',
-    'assets/raymond/raymondfinal-46.jpg',
-    'assets/raymond/raymondfinal-47.jpg',
     'assets/raymond/raymondfinal-5.jpg',
     'assets/raymond/raymondfinal-6.jpg',
     'assets/raymond/raymondfinal-13.jpg',
@@ -35,9 +32,7 @@ export class LightboxComponent implements OnInit {
     'assets/raymond/raymondfinal-27.jpg',
     'assets/raymond/raymondfinal-33.jpg',
     'assets/raymond/raymondfinal-34.jpg',
-    'assets/raymond/raymondfinal-35.jpg',
-    'assets/raymond/raymondfinal-44.jpg',
-    'assets/raymond/raymondfinal-45.jpg',
+    'assets/raymond/raymondfinal-35.jpg'
     ];
 
   constructor() { }
